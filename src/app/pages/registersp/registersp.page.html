@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button main="menu" slot="start"></ion-menu-button>
+    <ion-title> </ion-title>
+    <ion-avatar slot="end">
+      <img alt="Silhouette of a person's head" src="https://i.pinimg.com/736x/ef/b4/56/efb4563befb0ae1bed74f004785f3f0f.jpg"     /> 
+    </ion-avatar>
+
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+  <form>
+    
+    <ion-item lines="full">
+      <ion-label position="floating">   Name</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+   
+    <ion-item lines="full">
+      <ion-label position="floating">Date</ion-label>
+      <ion-input type="date" required></ion-input> </ion-item
+    > 
+    <ion-item lines="full">
+      <ion-label position="floating">   Contact number</ion-label>
+      <ion-input type="number" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select class="custom-options" interface="popover">
+        <ion-select-option value="brown" class="brown-option"
+          >male</ion-select-option
+        >
+        <ion-select-option value="blonde">Female</ion-select-option>
+        <ion-select-option value="black">unisex</ion-select-option>
+      </ion-select><br>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">   Address</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    
+  
+    
+    <ion-item lines="full">
+      <ion-label position="floating"> Adhar Number </ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+   
+    <br />
+    <ion-item>
+      <ion-label>Disignation</ion-label>
+      <ion-select class="custom-options" interface="popover">
+        <ion-select-option value="brown" class="brown-option"
+          >software engineer</ion-select-option
+        >
+        <ion-select-option value="blonde">devloper</ion-select-option>
+        
+      </ion-select> </ion-item
+    ><br />
+    
+
+ 
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="dark" expand="block" routerLink="/home" >Register</ion-button
+        >
+        <!----<a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>-->
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+
+ 
